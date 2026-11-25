@@ -29,6 +29,7 @@ HTML report goes to `reports/report.html`. The suite also runs on GitHub Actions
 ## Things I noticed
 
 - Wrong credentials on `/auth` return **200** with `{"reason": "Bad credentials"}` instead of 401. The test checks for that behaviour on purpose.
+- Creating a booking with missing fields returns **500** instead of a 4xx validation error (test only asserts status >= 400).
 - The server is shared and gets reset now and then, so the cleanup in the fixture is best effort.
 
 Belal Magdy | QA | [LinkedIn](https://www.linkedin.com/in/belal-magdy-23sep2001)
