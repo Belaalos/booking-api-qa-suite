@@ -17,8 +17,8 @@ pytest + requests tests for the [Restful-Booker](https://restful-booker.herokuap
 ## Run it
 
 ```bash
-git clone https://github.com/Belaalos/restful-booker-api-tests.git
-cd restful-booker-api-tests
+git clone https://github.com/Belaalos/booking-api-qa-suite.git
+cd booking-api-qa-suite
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 pytest
